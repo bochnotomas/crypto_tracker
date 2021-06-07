@@ -1,9 +1,23 @@
-.card {
+.card_green {
     width: 300px;
     height: 150px;
     background-color: white;
     border-radius: 5px;
     border-bottom: 5px solid green;
+    margin-top: 20px;
+
+    display: grid;
+    padding: 20px;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card_red {
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom: 5px solid red;
     margin-top: 20px;
 
     display: grid;
@@ -57,8 +71,12 @@
 .lower_data_change {
 }
 
-.lower_data_change span {
+.card_green .lower_data_change span {
     color: #3ac055;
+}
+
+.card_red .lower_data_change span {
+    color: red;
 }
 
 .lower_data_volume {
