@@ -53,34 +53,37 @@ export default function Cards(props) {
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>Top coins:</h2>
-            <Card 
-                src={coinsData[0].image} 
-                name={`${coinsData[0].symbol}/USD`} 
-                price={coinsData[0].current_price} 
-                volume={coinsData[0].volume} 
-                change={coinsData[0].percentage} 
-            />
-            <Card 
-                src={coinsData[1].image} 
-                name={`${coinsData[1].symbol}/USD`} 
-                price={coinsData[1].current_price} 
-                volume={coinsData[1].volume} 
-                change={coinsData[1].percentage} 
-            />
-            <Card 
-                src={coinsData[2].image} 
-                name={`${coinsData[2].symbol}/USD`} 
-                price={coinsData[2].current_price} 
-                volume={coinsData[2].volume} 
-                change={coinsData[2].percentage} 
-            />
-            <Card 
-                src={coinsData[3].image} 
-                name={`${coinsData[3].symbol}/USD`} 
-                price={coinsData[3].current_price} 
-                volume={coinsData[3].volume} 
-                change={coinsData[3].percentage} 
-            />
+            <div className={styles.container_cards}>
+                
+                <Card 
+                    src={coinsData[0].image} 
+                    name={`${coinsData[0].symbol}/USD`} 
+                    price={coinsData[0].current_price} 
+                    volume={coinsData[0].volume} 
+                    change={coinsData[0].percentage} 
+                />
+                <Card 
+                    src={coinsData[1].image} 
+                    name={`${coinsData[1].symbol}/USD`} 
+                    price={coinsData[1].current_price} 
+                    volume={coinsData[1].volume} 
+                    change={coinsData[1].percentage} 
+                />
+                <Card 
+                    src={coinsData[2].image} 
+                    name={`${coinsData[2].symbol}/USD`} 
+                    price={coinsData[2].current_price} 
+                    volume={coinsData[2].volume} 
+                    change={coinsData[2].percentage} 
+                />
+                <Card 
+                    src={coinsData[3].image} 
+                    name={`${coinsData[3].symbol}/USD`} 
+                    price={coinsData[3].current_price} 
+                    volume={coinsData[3].volume} 
+                    change={coinsData[3].percentage} 
+                />
+            </div>
         </div>
     )
 }

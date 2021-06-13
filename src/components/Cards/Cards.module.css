@@ -1,6 +1,11 @@
 .container {
-    margin: 30px auto;
     width: 75%;
+    margin: 30px auto;
+    display: grid;
+    justify-content: center;
+}
+
+.container_cards {
     display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
@@ -8,4 +13,10 @@
 
 .title {
     color: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+    .container_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

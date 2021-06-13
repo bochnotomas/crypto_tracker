@@ -28,13 +28,18 @@ export default function Chart(props) {
                     borderColor: '#3333ff',
                     label: `${props.coin}`.charAt(0).toUpperCase() + `${props.coin}`.slice(1)
                 }],
-            }} 
+            }}
+            options = {{
+                responsive: true,
+                maintainAspectRatio: true,
+            }}
+            height= {350} 
         />) : null
     );
 
 
     return (
-        <div>
+        <div className={styles.container}>
             {lineChart}
             <div className={styles.buttons}>
                 <button className={styles.button} onClick={() => setTimeFormat("1")}>1d</button>
