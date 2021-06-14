@@ -1,3 +1,11 @@
+# Cryptocurrency price tracker Cryptozoid
+
+Tracker web application made in react framework with use of react-chartsjs-2 library and data from CoinGecko api.
+
+# Phone View
+
+![phone view](./src/images/phone_view.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
