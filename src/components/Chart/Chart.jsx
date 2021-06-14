@@ -33,6 +33,25 @@ export default function Chart(props) {
                 responsive: true,
                 maintainAspectRatio: true,
             }}
+            height= {150} 
+        />) : null
+    );
+
+    const lineChartBig = (
+        prices.length ? (
+            <Line 
+            data = {{
+                labels: prices.map(price => new Date(price[0]).toLocaleDateString()),
+                datasets: [{
+                    data: prices.map( price => price[1]),
+                    borderColor: '#3333ff',
+                    label: `${props.coin}`.charAt(0).toUpperCase() + `${props.coin}`.slice(1)
+                }],
+            }}
+            options = {{
+                responsive: true,
+                maintainAspectRatio: true,
+            }}
             height= {350} 
         />) : null
     );
